@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f3f7f7;
+}
+.top_nav{
+    height: 6rem;
+    background-color: #011;
+}
+.top_nav--ul {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    list-style: none;
+}
+.top_nav--ul div{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+.top_nav--ul div li{
+    margin: 1px;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+}
+.top_nav--ul a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.top_nav--ul a:hover{
+    background-color: #f3f7f7;
+    color: #011;
+    border-radius: 7px;
+}
+.logIn a, .donate_option a{
+    background-color: #f3f7f7;
+    color: #011;
+    border-radius: 7px;
+}
+.logIn a:hover, .donate_option a:hover{
+    outline: 2px solid green;
+}
+/* header img start  */
+.header_img{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    
+}
+.header_paragraph{
+    background-color: rgba(231,235,241,0.3);
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+.header_img--image{
+    width: 50%;
+    object-fit: cover;
+}
+/* Main style start */
+.welcome{
+    padding: 3rem;
+}
+.welcome .welcome_title-1{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.welcome_paragraph{
+    display: flex;
+    height: 25rem;
+    gap: 2rem;
+}
+.welcome_title{
+    margin: 2rem;
+    text-align: center;
+}
+.welcome_paragraph div p{
+    
+    font-size: 1.3rem;
+}
+div p em{
+    display: inline-block;
+    width: 4rem;
+}
+
