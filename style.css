@@ -85,8 +85,14 @@ body{
     text-align: center;
 }
 .welcome_paragraph div p{
-    
     font-size: 1.3rem;
+}
+.welcome_paragraph div{
+    width: 50%;
+}
+.welcome_paragraph img{
+    width: 50%;
+    object-fit: cover;
 }
 div p em{
     display: inline-block;
