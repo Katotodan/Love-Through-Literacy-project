@@ -1,7 +1,7 @@
 // header paragraph script
 const headerPara = document.querySelector('.header_paragraph')
 const paragraphWord = [
-    'Love Though Literaracy Project', 'Insparing Readers One Word at a Time!',
+    'Love Though Literaracy Project', 'Inspiring Readers One Word at a Time!',
     'English Language & Literacy Development Center, Ltd'
 ]
 let index = 0;

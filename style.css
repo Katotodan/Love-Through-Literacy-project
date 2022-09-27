@@ -50,18 +50,23 @@ body{
 /* header img start  */
 .header_img{
     width: 100%;
-    height: 25rem;
+    height: 28rem;
     display: flex;
     
 }
 .header_paragraph{
-    background-color: rgba(231,235,241,0.3);
+    background-image: linear-gradient(-200deg, rgba(154,100,54,255)
+    ,rgba(182,126,67,255),rgba(144,82,43,255), rgba(144,82,43,255),rgba(182,126,67,255));
     display: flex;
     width: 50%;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 2rem;
     padding: 3rem;
+    color: #f3f7f7;
+    
+    
 }
 .header_img--image{
     width: 50%;
@@ -98,4 +103,38 @@ div p em{
     display: inline-block;
     width: 4rem;
 }
+/* Service style start */
+.services .services--title{
+    text-align: center;
+    height: 2rem;
+}
+.services_container{
+    display: flex;
+    margin: 2rem 2.5rem;
+    gap: 2.5rem;
+}
+.services_container .tutoring, .services_container .book_club, .services_container .training{
+    width: 100%;
+    background-color:  rgba(231,235,241);
+    padding: 2rem;
+}
+.services_container h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.services_container .service--paragraph{
+    height: 14rem;
+    line-height: 1.5rem;
+    font-family:sans-serif,Arial, Helvetica;
+}
+.services_container button{
+    padding: 0.5rem;
+    background-color: rgba(154,100,54,255);
+    outline: none;
+    color: #f3f7f7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
