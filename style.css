@@ -4,8 +4,15 @@
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
 }
+
 body{
     background-color: #f3f7f7;
+    width: 100%;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    
 }
 .top_nav{
     height: 6rem;
@@ -17,16 +24,18 @@ body{
     justify-content: space-between;
     padding: 2rem 4rem;
     list-style: none;
+    width: 100%;
 }
 .top_nav--ul div{
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 60%;
+    visibility: visible;
 }
 .top_nav--ul div li{
     margin: 1px;
     text-align: left;
-    width: 100%;
+    width: auto;
     text-align: center;
 }
 .top_nav--ul a{
@@ -72,18 +81,19 @@ body{
     width: 50%;
     object-fit: cover;
 }
-/* Main style start */
-.welcome{
-    padding: 3rem;
+#word{
+    display: none;
 }
+/* Main style start */
 .welcome .welcome_title-1{
     text-align: center;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 .welcome_paragraph{
     display: flex;
     height: 25rem;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 .welcome_title{
     margin: 2rem;
@@ -91,13 +101,16 @@ body{
 }
 .welcome_paragraph div p{
     font-size: 1.3rem;
+    text-align: justify;
 }
 .welcome_paragraph div{
     width: 50%;
+    margin-right: 3rem;
 }
 .welcome_paragraph img{
     width: 50%;
     object-fit: cover;
+    margin-left: 3rem;
 }
 div p em{
     display: inline-block;
@@ -110,11 +123,13 @@ div p em{
 }
 .services_container{
     display: flex;
-    margin: 2rem 2.5rem;
+    margin: 2rem 0rem;
     gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .services_container .tutoring, .services_container .book_club, .services_container .training{
-    width: 100%;
+    width: 30%;
     background-color:  rgb(231,235,241);
     padding: 2rem;
 }
@@ -123,8 +138,7 @@ div p em{
     margin-bottom: 1rem;
 }
 .services_container .service--paragraph{
-    height: 14rem;
-    line-height: 1.5rem;
+    height: 18rem;
     font-family:sans-serif,Arial, Helvetica;
 }
 .services_container button{
@@ -142,18 +156,20 @@ div p em{
 }
 .program--container{
     display: flex;
-    padding: 3rem;
+    padding: 0 1rem;
+    justify-content: center;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 .program--container--first{
-    width: 150%;
+    width: 65%;
     background-color: rgb(231,235,241);
     padding: 2rem 0;
     line-height: 1.5rem;
     font-family:sans-serif,Arial, Helvetica;
 }
 .program--container--last{
-    width: 75%;
+    width: 30%;
     background-color: rgb(144,82,43);
     color: #f3f7f7;
     padding: 2rem 0;
@@ -170,11 +186,13 @@ div p em{
     border-radius: 10px;
     padding: 0 0.5rem;
     outline: none;
+    text-align: center;
 }
 .newspaper button{
     width: 7rem;
     border-radius: 10px;
     padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 footer{
     display: flex;
@@ -182,7 +200,321 @@ footer{
     color: #f3f7f7;
     gap: 3rem;
     padding: 2rem 3rem;
+    margin-top: 1rem;
 }
+footer div{
+    width: 100%;
+}
+footer div a{
+    color: #f3f7f7;
+}
+footer div button{
+    background-color: rgb(144,82,43);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+footer div button a{
+    color: #011;
+    text-decoration: none;
+}
+.menu, .delete{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: #f3f7f7;
+    display: none;
+    z-index: 4443;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1119px) {
+    .welcome_title{
+        margin-top: 0;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 1060px) {
+    .top_nav--ul div{
+        width: 55%;
+    }
+    .program--container--first{
+        width: 100%;
+        gap: 4rem !important; 
+    }
+    .program--container--last{
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1032px) {
+    .top_nav--ul {
+        padding: 2rem 2rem;
+    } 
+}
+@media screen  and (max-width:998px){
+    /* image section responsiveness */
+    .header_img{
+        position: relative;
+        display: block;
+        height: 28rem;
+    }
+    .header_img--image{
+        float: right;
+        width: 65%;
+        height: 28rem;
+        object-fit: cover;
+        
+    }
+    .header_paragraph{
+        position: relative;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+    }
+    .word{
+        display: none;
+    }
+    #word{
+        display: inline-block;
+        position: absolute;
+        top: 12rem;
+        left: 0;
+        color: #f3f7f7;
+        font-weight: bolder;
+        font-size: 1.4rem;
+        width: 30rem;
+        text-align: center;
+    }
+    .welcome_paragraph{
+        gap: 1rem;
+    }
+    .welcome_paragraph div{
+        margin-right: 1rem;
+    }
+    .welcome_paragraph img{
+        margin-left: 1rem;
+    }
+
+}
+@media screen and (max-width: 883px) {
+    .welcome_paragraph{
+        flex-wrap: wrap; 
+        height: auto;
+    } 
+    .welcome_paragraph img,
+    .welcome_paragraph div{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .welcome_paragraph img{
+        height: 22rem;
+    }
+    .welcome_paragraph div p{
+        text-align: justify;
+    }
+    .services_container .tutoring, .services_container .book_club, .services_container .training{
+        width: 40%;
+    }
+    .services_container .training {
+        height: 20rem !important;
+    }
+    .services_container .training .service--paragraph {
+        height: 12rem !important;
+    }
+    
+}
+
+@media screen and (max-width: 832px) {
+    .menu{
+        display: inline;
+        
+    }
+    .delete{
+        display:  inline;
+        visibility: hidden;
+    }
+    .top_nav--ul div{
+        display: none;
+        flex-direction : column;
+        background-color : #011;
+        position : absolute;
+        top : 0;
+        right : 0;
+        height : 17rem;
+        padding : 3.5rem 0 1rem 0;
+        width : 15rem;
+        animation: start 3s ease 0s 1 normal both;
+        z-index: 444;
+    }
+    @keyframes start {
+        0%{
+            right: -15rem;
+        }
+        100%{
+            right: 0;
+            
+        }
+        
+    }
+    @keyframes end {
+        0%{
+            right: 0;
+        }
+        100%{
+            right: -15rem;
+            
+        }
+        
+    }
+    
+     /* image section */
+    
+}
+@media screen and (max-width: 829px) {
+    #word{
+        width: 20rem;
+    }  
+    
+}
+
+@media screen and (max-width: 727px) {
+    .header_img--image{
+        width: 75%;  
+    }
+    .welcome_title-1{
+        font-size: 1.3rem;
+    }
+    .welcome_paragraph div p, .welcome_paragraph div h2{
+        font-size: 1.2rem;
+    }
+    .welcome_paragraph div h2{
+        margin: 1rem;
+    }
+    .program--container--first--div{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left:0 ;
+        padding-right: 0;
+    }
+    .program--container--first--div > *{
+        width: 90%;
+    }
+    .program--container--first h2{
+        margin-bottom: 1rem;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    footer > *{
+        width: 13rem !important;
+    }
+    footer div:last-child{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .top_nav--ul {
+        padding: 1rem 1rem;
+    }
+    .top_nav{
+        height: 4rem;
+    }
+    .menu, .delete{
+        top: 1rem;
+        right: 1rem;
+    } 
+    .header_img{
+        display: block;
+        position: relative; 
+        height: 24rem; 
+    }
+    .header_img--image{
+        height: 24rem;
+        object-fit: cover;
+        width: 100%;
+        /* margin-bottom: 2rem; */
+    }
+    #word{
+        top: 82%;
+        width: 100%;
+        font-size: 1.2rem;
+        color: #011;
+    }
+    .header_paragraph{
+        display: none;
+    }
+    .welcome_title-1{
+        padding: 1.5rem !important;
+        font-size: 1.2rem;
+    }
+    .welcome_paragraph img{
+        height: 15rem !important;
+    }
+    .welcome_paragraph div p, .welcome_paragraph div h2{
+        font-size: 1rem;
+    }
+    .services_container .tutoring, .services_container .book_club, .services_container .training{
+        width: 70%;
+    }
+
+    .services_container .book_club {
+        height: 20rem !important;
+    }
+    .services_container .book_club .service--paragraph {
+        height: 12rem !important;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+      
+}
+@media screen and (max-width: 400px) {
+    .header_img--image,.header_img{
+        height: 20rem;
+    }  
+    #word{
+        top: 70%;
+        font-size: 1rem;
+        /* background-color: #011; */
+    }
+    .services_container .tutoring, .services_container .book_club, .services_container .training{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 340px) {
+    .top_nav--ul {
+        padding: 1rem 0.5rem;
+    }
+    .menu, .delete{
+        top: 1rem;
+        right: 0.5rem;
+    } 
+    .top_nav--ul li:first-child{
+        font-size: 0.8rem;
+    } 
+    #word{
+        top: 70%;
+    } 
+    .services_container .tutoring, .services_container .book_club, .services_container .training{
+        width: 95%;
+    }
+}
+
 
 
 
