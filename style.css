@@ -111,6 +111,7 @@ body{
     width: 50%;
     object-fit: cover;
     margin-left: 3rem;
+    border-radius: 10px;
 }
 div p em{
     display: inline-block;
@@ -132,6 +133,7 @@ div p em{
     width: 30%;
     background-color:  rgb(231,235,241);
     padding: 2rem;
+    border-radius: 10px;
 }
 .services_container h4{
     text-align: center;
@@ -167,6 +169,7 @@ div p em{
     padding: 2rem 0;
     line-height: 1.5rem;
     font-family:sans-serif,Arial, Helvetica;
+    border-radius: 10px;
 }
 .program--container--last{
     width: 30%;
@@ -174,6 +177,7 @@ div p em{
     color: #f3f7f7;
     padding: 2rem 0;
     text-align: center;
+    border-radius: 10px;
 }
 .program--container--first--div{
     display: flex;
@@ -216,6 +220,10 @@ footer div button{
 footer div button a{
     color: #011;
     text-decoration: none;
+}
+.icon{
+    display: inline-block;
+    margin: 0 0.25rem;
 }
 .menu, .delete{
     position: absolute;
@@ -415,7 +423,7 @@ footer div button a{
         flex-wrap: wrap;
     }
     footer > *{
-        width: 13rem !important;
+        width: 17rem !important;
     }
     footer div:last-child{
         width: 100% !important;
@@ -444,7 +452,7 @@ footer div button a{
         /* margin-bottom: 2rem; */
     }
     #word{
-        top: 82%;
+        top: 25rem;
         width: 100%;
         font-size: 1.2rem;
         color: #011;
@@ -488,9 +496,8 @@ footer div button a{
         height: 20rem;
     }  
     #word{
-        top: 70%;
+        top: 21rem;
         font-size: 1rem;
-        /* background-color: #011; */
     }
     .services_container .tutoring, .services_container .book_club, .services_container .training{
         width: 90%;
@@ -507,9 +514,13 @@ footer div button a{
     .top_nav--ul li:first-child{
         font-size: 0.8rem;
     } 
+    footer > *{
+        width: 100%;
+    }
+    /* 
     #word{
         top: 70%;
-    } 
+    }  */
     .services_container .tutoring, .services_container .book_club, .services_container .training{
         width: 95%;
     }
